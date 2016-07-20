@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <tr>
+    <th>Cab Id</th>
+    <th>Latitude - Longitude</th>
+    <th>Available</th>
+  </tr>
+  <% @cabs.each do |cab| %>
+      <tr>
+        <td>
+          <%= cab.id %>
+        </td>
+        <td>
+          <%= cab.latitude %> - <%= cab.longitude %>
+        </td>
+        <td>
+          <%= cab.available ? 'Available':'Not Available'%>
+        </td>
+      </tr>
+  <% end %>
+
+</table>

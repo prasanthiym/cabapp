@@ -1,0 +1,61 @@
+Display All Cabs
+
+To fetch Nearest Cab
+
+API :  http://localhost:3000/nearest-cab
+
+Method: Post
+
+Parameters: 
+    start_latitude : 5
+    start_longitude : 5
+
+
+Response:
+{
+    "cabId": "5"
+}
+
+
+
+To Start Ride
+
+API :  http://localhost:3000/start-ride
+
+Method: Put
+
+Parameters: 
+    start_latitude : 5
+    start_longitude : 5
+    cab_id : 5
+
+Response:
+{
+    "cab_id": 5,
+    "ride_id": 2,
+    "message": "Ride Started Successfully"
+}
+
+
+To End Ride
+
+API :  http://localhost:3000/end-ride
+
+Method: Put
+
+Parameters: 
+    start_latitude : 5
+    start_longitude : 5
+    ride_id : 5
+
+Response:
+{
+    "ride_id": 2,
+    "amount": 50,
+    "cab_id": 5,
+    "message": "Ride Ended Successfully"
+}
+
+
+
+
